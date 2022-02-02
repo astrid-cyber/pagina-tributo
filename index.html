@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>formulario</title>
+</head>
+
+<body>
+
+
+  
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+      </header>
+
+      <div class="container">
+
+   <form id="survey-form"> 
+               <div class="form-control"> 
+                     <label for="nombre" id="name-label">Name</label>
+                     <input  class="datos" required="true" type="text" id="nombre" placeholder="Enter your Name">
+                     <label for="email" id="email-label"> Email</label>
+                     <input  class="datos" required="true" type="email" id="email" placeholder="Enter your Email">
+                     <label for="number">Age(optional)</label>
+                     <input  class="datos" type="number" id="number-label" min="10" max="99" placeholder="Age">
+               </div> 
+
+               <div class="control">
+                  <p>Witch option best describes your current role?</p>
+                  <select  name="" class="formulario-control">
+                     <option disabled selected value>Selecciona un roll</option>
+                     <option value="student" selected="true">Student</option>
+                     <option value="Full Time job">Full Time job</option>
+                     <option value="Full Time Learner">Full Time Learner</option>
+                     <option value="Prefer not to say">Prefer not to say</option>
+                     <option value="Other">Other</option><br>
+                     <div></div>
+                  </select>
+            </div> 
+            <div clas="form-control">
+                  <p> Would you recommend freeCodeCamp to a friend?</p> 
+                  <input type="radio" name="recommend" value="definitely">
+                  <label for="Definitely">Definitely</label><br>
+                  <input type="radio" name="recommend" value="maybe">
+                  <label for="Maybe">Maybe</label><br>
+                  <input type="radio" name="recommend" value="not sure">
+                  <label for="Not sure">Not sure</label><br><br>
+            </div> 
+               <div clas="form-control">
+                  <p>What is your favorite feature of freeCodeCamp?</p>
+                  <select name="" required="true" id="most-like" class="formulario-control">
+                  <option disabled selected>Selecciona una opción</option>
+                  <option value="Challenges" selected="true">Challenges</option>
+                  <option value="Projects">Projects</option>
+                  <option value="Community">Community</option>
+                  <option value="Open Source">Open Source</option><br><br>
+            </select>  
+            </div>
+            <div clas="form-control">
+               <p>What would you like to see improved?(check all that apply) </p> 
+               <input type="checkbox" name="preferido" value="Front-end Projects" class="checkbox-input">
+               <label for="">Front-end Projects</label><br>
+               <input type="checkbox" name="preferido" value="back-end Projects" class="checkbox-input">
+               <label for="Back-end Projects">Back-end Projects</label><br>
+               <input type="checkbox" name="preferido" value="Data Visualization" class="checkbox-input">
+               <label for="Data Visualization">Data Visualization</label><br>
+               <input type="checkbox" name="preferido" value="Challenges" class="checkbox-input">
+               <label for="Challenges">Challenges</label><br>
+               <input type="checkbox" name="preferido" value="Open Source Community" class="checkbox-input">
+               <label for="Open Source Community">Open Source Community</label><br>
+               <input type="checkbox" name="preferido" value="Gitter help rooms" class="checkbox-input">
+               <label for="Gitter help rooms">Gitter help rooms</label><br>
+               <input type="checkbox" name="preferido" value="Videos" class="checkbox-input">
+               <label for="Videos">Videos</label><br>
+               <input type="checkbox" name="preferido" value="City Meetups" class="checkbox-input">
+               <label for="City Meetups">City Meetups</label><br>
+               <input type="checkbox" name="preferido" value="wiki" class="checkbox-input">
+               <label for="wiki">wiki</label><br>
+               <input type="checkbox" name="preferido" value="Forum" class="checkbox-input">
+               <label for="Forum">Forum</label><br>
+               <input type="checkbox" name="preferido" value="Additional Courses" class="checkbox-input">
+               <label for="Additional Courses">Additional Courses</label><br><br>
+            </div>
+            <div class="form-control">
+               <p></p> Any comments or suggesions?
+               <textarea name="" id="comentario" cols="65" rows="7" placeholder="Enter your comment here..."  ></textarea>
+            </div>
+            <div class="form-control">
+            <button type="submit" id="submit">enviar</button>
+            </div>
+ 
+        
+    </form>
+</div>
+    
+</body>
+
+</html>
